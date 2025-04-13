@@ -9,7 +9,8 @@ const navLinks = [
 
 export default function Sidebar() {
     return (
-        <div className="relative flex h-screen w-full max-w-[20rem] flex-col bg-[#12121B]/90 bg-clip-border py-4 text-gray-700 shadow-xl shadow-blue-gray-900/5">
+        <div className="relative flex h-screen w-full max-w-[20rem] flex-col bg-clip-border py-4 text-gray-700 shadow-xl shadow-blue-gray-900/5"
+        style={{backgroundColor: 'rgba(18, 18, 27, 0)'}}>
             <div className="p-4 mb-2">
                 <h5 className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-[#E44CB1]">
                     Dashboard
