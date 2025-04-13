@@ -2,12 +2,12 @@ import { Element } from "react-scroll";
 import Box from "../../components/Box";
 
 export default function Home() {
-    
+
     return (
         <Element name="home" className="min-h-screen relative bg-transparent p-8">
-            <pre className="absolute text-pink-500/60 z-0 right-40">
-            {`
-            ⢀⣀⠀⠀⠀⠀⠀⢀⣀⠀
+            <pre className="absolute text-pink-500/60 z-0 right-40 -top-10">
+                {`
+             ⢀⣀⠀⠀⠀⠀⠀⢀⣀⠀
             ⢠⣯⢬⣷⡀⠀⠀⣴⡯⢌⣧
             ⠸⣿⠀⠹⣷⠀⢸⡝⠀⢸⡿
             ⠀⠻⣧⣀⣿⣦⣼⡁⣠⣿⠃
@@ -17,15 +17,15 @@ export default function Home() {
             ⠀⠳⣼⣤⣤⣤⣤⣤⣧⠾⠁`}
             </pre>
 
-            <div>
+            <div className="mb-5">
                 <p className="text-3xl text-white">Beatris Rahimi</p>
-                <h1 className="jersay text-5xl text-white">Junior Software Engineer</h1>
+                <h1 className="jersay text-7xl text-white tracking-wider">Junior Software Engineer</h1>
             </div>
 
-            <div>
-                <div className="flex flex-col gap-5">
-                    <img src="/me.jpg" className="w-1/4" />
-                    <Box className='w-1/4 h-40' >
+            <div className="w-full flex gap-3">
+                <div className="flex flex-col gap-5 w-1/3">
+                    <img src="/me.jpg" className="w-10/12 h-[500px] object-cover mx-auto" />
+                    <Box className='w-10/12 h-40 mx-auto' >
                         <ul className="flex flex-col gap-3">
                             <li className="flex gap-4 items-center text-xl">
                                 <span className="w-4 h-[2px] bg-gray-700 inline-block rounded-full">
@@ -42,8 +42,25 @@ export default function Home() {
                         </ul>
                     </Box>
                 </div>
-                <div></div>
+                <div className="flex flex-wrap gap-5 w-2/3">
+                    <div className="flex gap-5 w-full">
+                        <Box
+                            headther={{ textPosition: 'center', title: 'Welcome' }}
+                            className="w-3/5"
+                        />
+
+                        <Box
+                            headther={{ textPosition: 'center', title: 'Activity' }}
+                            className="w-2/5"
+                        />
+                    </div>
+
+                    <Box
+                        headther={{ textPosition: 'start', title: 'Time Spend Doing Dev Things' }}
+                        className="w-full"
+                    />
+                </div>
             </div>
         </Element>
-   );
+    );
 }

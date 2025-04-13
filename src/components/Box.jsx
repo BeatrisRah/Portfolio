@@ -1,15 +1,12 @@
 
-export default function Box({ children, headther, className = "" }) {
+export default function Box({ children, headther = null, className = "" }) {
     return (
         <div
             className={`glow-border bg-[#12121b]/80 z-0 relative p-4 ${className}`} >
 
             {headther && (
-                <div className={`border-b-4 border-indigo-500 w-full ${headther.textPosition === 'center' ?
-                        'text-center' :
-                        'text-start'
-                    }`} >
-                    <h1 className="jersay">{headther.title}</h1>
+                <div className={`border-b-2 border-[#28282F] w-full text-${headther.textPosition}`} >
+                    <h1 className="jersay text-2xl">{headther.title}</h1>
                 </div>
             )}
 
