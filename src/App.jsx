@@ -23,7 +23,7 @@ function App() {
 
 	// Calculate the gradient values
 	const gradientStyle = {
-		background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #E849AF , #0E172B)`,
+		background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px,rgba(232, 73, 174, 0.82) , #0E172B, #0E172B)`,
 		height: '100%',
 		minHeight: '100%',
 		position: 'fixed',
