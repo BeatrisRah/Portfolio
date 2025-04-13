@@ -9,3 +9,34 @@ scroll-behavior: smooth;
 .jersay{
     font-family: "Jersey 20", sans-serif;
 }
+
+.glow-border {
+    position: relative;
+    border-radius: 0.125rem; /* match rounded-sm */
+    z-index: 0;
+  }
+  
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(270deg, #7f5af000, #ff00a6, #f05ab443);
+    background-size: 600% 600%;
+    animation: glowAnim 6s ease infinite;
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+    
+  @keyframes glowAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
