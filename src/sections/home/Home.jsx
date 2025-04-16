@@ -1,5 +1,6 @@
 import { Element } from "react-scroll";
 import Box from "../../components/Box";
+import DonutChart from "./DonutChart";
 
 export default function Home() {
 
@@ -58,7 +59,9 @@ export default function Home() {
                     <Box
                         headther={{ textPosition: 'start', title: 'Time Spend Doing Dev Things' }}
                         className="w-full"
-                    />
+                    >
+                        <DonutChart className="w-10/12 mx-auto" />
+                    </Box>
                 </div>
             </div>
         </Element>
