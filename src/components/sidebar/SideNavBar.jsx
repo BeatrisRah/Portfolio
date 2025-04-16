@@ -1,9 +1,10 @@
 import { MdHomeFilled } from "react-icons/md";
 import SideBarItem from "./SideBarItem";
+import { FaWrench } from "react-icons/fa6";
 
 const navLinks = [
     {path: 'home', name:'Home', icon: <MdHomeFilled />},
-    {path: 'tech', name:'Tetch', icon: <MdHomeFilled />}
+    {path: 'tech', name:'Tetch', icon: <FaWrench />}
 
 ]
 

@@ -4,7 +4,14 @@
 html {
 scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
 
 .jersay{
     font-family: "Jersey 20", sans-serif;
