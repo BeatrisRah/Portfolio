@@ -40,3 +40,8 @@ scroll-behavior: smooth;
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
+
+
+.drop-shadow-glow{
+  text-shadow: 0px 0px 32px rgba(255,0,123,1);
+}

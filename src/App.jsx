@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 function App() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-	// Track mouse movement
+	
 	useEffect(() => {
 		const handleMouseMove = (e) => {
 			const { clientX: x, clientY: y } = e;
@@ -15,13 +15,13 @@ function App() {
 
 		window.addEventListener('mousemove', handleMouseMove);
 
-		// Clean up the event listener when component is unmounted
+		
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMove);
 		};
 	}, []);
 
-	// Calculate the gradient values
+
 	const gradientStyle = {
 		background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px,rgba(232, 73, 174, 0.82) , #0E172B, #0E172B)`,
 		height: '100%',
