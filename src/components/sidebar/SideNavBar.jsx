@@ -17,7 +17,7 @@ export default function Sidebar() {
                 </h5>
             </div>
             <nav className="flex w-full flex-col gap-1 font-sans text-base font-normal text-white">
-                {navLinks.map(el => <SideBarItem {...el} />)}
+                {navLinks.map(el => <SideBarItem key={el.path} {...el} />)}
                 
             </nav>
         </div>

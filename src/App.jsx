@@ -3,6 +3,7 @@ import Sidebar from "./components/sidebar/SideNavBar"
 import TopNavigation from "./components/Navigation"
 import Home from "./sections/home/Home"
 import { useEffect, useState } from "react";
+import DotPagination from "./components/DotPagination";
 function App() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -43,7 +44,7 @@ function App() {
 			</div>
 
 			{/* Page Content */}
-			<div className="ml-64 flex-1">
+			<div className="ml-64 w-10/12">
 				<TopNavigation />
 				<Home />
 				<Element name="tech" className="min-h-screen bg-transparent p-8">
@@ -51,6 +52,8 @@ function App() {
 				</Element>
 				
 			</div>
+
+			<DotPagination />
 		</div>
 	)
 }
