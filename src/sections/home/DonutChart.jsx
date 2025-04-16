@@ -14,11 +14,11 @@ export default function DonutChart({ size = 260, stroke = 30, className = '' }) 
     return (
         <div className={`flex items-center gap-4 ${className}`}>
 
-            <ul className="text-md text-white w-1/2">
+            <ul className="text-lg text-white w-1/2">
                 {data.map((item, i) => (
-                    <li key={i} className="flex gap-2 items-center p-2">
+                    <li key={i} className="flex gap-5 items-center p-2">
                         <span
-                            className="inline-block w-3 h-3 rounded-full"
+                            className="inline-block w-5 h-5 rounded-full"
                             style={{ backgroundColor: item.color }}
                         ></span>
                         {item.label} – {item.percent}%
@@ -26,7 +26,7 @@ export default function DonutChart({ size = 260, stroke = 30, className = '' }) 
                 ))}
             </ul>
             <svg
-                className="donut-spin"
+                className="donut-spin w-1/2"
                 width={size}
                 height={size}
                 viewBox={`0 0 ${size} ${size}`}

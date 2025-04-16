@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <Element name="home" className="min-h-screen relative bg-transparent p-8">
-            <pre className="absolute text-pink-500/60 z-0 right-40 -top-10">
+            <pre className="absolute text-pink-500/60 z-0 right-40 -top-10 rotate-3">
                 {`
              ⢀⣀⠀⠀⠀⠀⠀⢀⣀⠀
             ⢠⣯⢬⣷⡀⠀⠀⣴⡯⢌⣧
@@ -20,7 +20,7 @@ export default function Home() {
             ⠀⠳⣼⣤⣤⣤⣤⣤⣧⠾⠁`}
             </pre>
 
-            <div className="mb-5">
+            <div className="mb-5 w-10/12 ml-10">
                 <p className="text-3xl text-white">Beatris Rahimi</p>
                 <h1 className="jersay text-7xl text-white tracking-wider">Junior Software Engineer</h1>
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
                         headther={{ textPosition: 'start', title: 'Time Spend Doing Dev Things', marginB:'10' }}
                         className="w-full"
                     >
-                        <DonutChart className="w-10/12 mx-auto" />
+                        <DonutChart className="w-9/12 mx-auto" />
                     </Box>
                 </div>
             </div>
