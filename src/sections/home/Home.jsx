@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import Box from "../../components/Box";
 import DonutChart from "./DonutChart";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
 
@@ -46,9 +47,18 @@ export default function Home() {
                 <div className="flex flex-wrap gap-5 w-2/3">
                     <div className="flex gap-5 w-full">
                         <Box
-                            headther={{ textPosition: 'center', title: 'Welcome' }}
+                            headther={{ textPosition: 'center', title: 'Welcome' , marginB:'5' }}
                             className="w-3/5"
-                        />
+                        >
+                            <p
+                            className="w-11/12 p-2 text-lg"
+                            >
+                            <Typewriter 
+                            words={['Hello, world👋!']} 
+                            cursor={true}
+                            loop={3}
+                            /> <br/> You can call me Betty, I'm a <b>Full-stack Developer</b> building clean, and clever things.</p>
+                        </Box>
 
                         <Box
                             headther={{ textPosition: 'center', title: 'Activity' }}
@@ -57,7 +67,7 @@ export default function Home() {
                     </div>
 
                     <Box
-                        headther={{ textPosition: 'start', title: 'Time Spend Doing Dev Things' }}
+                        headther={{ textPosition: 'start', title: 'Time Spend Doing Dev Things', marginB:'10' }}
                         className="w-full"
                     >
                         <DonutChart className="w-10/12 mx-auto" />
