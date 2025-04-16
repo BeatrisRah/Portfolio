@@ -2,6 +2,7 @@ import { Element } from "react-scroll";
 import Box from "../../components/Box";
 import DonutChart from "./DonutChart";
 import { Typewriter } from "react-simple-typewriter";
+import ContributionGrid from "./Activity";
 
 export default function Home() {
 
@@ -61,9 +62,11 @@ export default function Home() {
                         </Box>
 
                         <Box
-                            headther={{ textPosition: 'center', title: 'Activity' }}
+                            headther={{ textPosition: 'center', title: 'Activity', marginB:'2' }}
                             className="w-2/5"
-                        />
+                        >
+                            <ContributionGrid />
+                        </Box>
                     </div>
 
                     <Box
