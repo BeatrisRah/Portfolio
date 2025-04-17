@@ -5,7 +5,7 @@ import {
 const data = [
     {
         name: 'Front-End',
-        'coding': 4000,
+        'coding': 3500,
         'debugging': 2400,
     },
     {
@@ -15,7 +15,7 @@ const data = [
     },
     {
         name: 'Learning',
-        'coding': 100,
+        'coding': 4000,
         'debugging': 2000,
     },
 ];

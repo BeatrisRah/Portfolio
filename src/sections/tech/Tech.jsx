@@ -49,14 +49,20 @@ export default function Tetch() {
             <Box className="w-[45%]">
                 <CustomBarChart />
             </Box>
-            <div>
-                <h1 className="text-3xl jersay">My Stack Usage Levels</h1>
-                <ul>
-                    <li>Vibing to music | 0 - 1000  </li>
-                    <li>Fisrt Coffee | 1000 - 2500 </li>
-                    <li>Podcast && Second Coffee | 2500 - 3000 </li>
-                    <li>Last touches | 3000 - 4000 </li>
+            <div className="p-6">
+                <h1 className="text-4xl jersay mb-4">My Stack Usage Levels</h1>
+                <ul className="grid grid-cols-2 gap-y-2 text-lg max-w-md ml-4">
+                    <li className="text-left">Vibing to music</li>
+                    <li className="text-right text-pink-400/70 hover:text-pink-300 cursor-default">0 - 1000</li>
 
+                    <li className="text-left">First Coffee</li>
+                    <li className="text-right text-pink-400/70 hover:text-pink-300 cursor-default">1000 - 2500</li>
+
+                    <li className="text-left">Podcast && Second Coffee</li>
+                    <li className="text-right text-pink-400/70 hover:text-pink-300 cursor-default">2500 - 3000</li>
+
+                    <li className="text-left">Last touches</li>
+                    <li className="text-right text-pink-400/70 hover:text-pink-300 cursor-default">3000 - 4000</li>
                 </ul>
             </div>
         </div>
