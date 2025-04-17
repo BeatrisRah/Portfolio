@@ -71,3 +71,18 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+
+.tech-border{
+  background:
+  radial-gradient(circle at 100% 100%, #242332 0, #242332 0.5px, transparent 0.5px) 0% 0%/3px 3px no-repeat,
+  radial-gradient(circle at 0 100%, #242332 0, #242332 0.5px, transparent 0.5px) 100% 0%/3px 3px no-repeat,
+  radial-gradient(circle at 100% 0, #242332 0, #242332 0.5px, transparent 0.5px) 0% 100%/3px 3px no-repeat,
+  radial-gradient(circle at 0 0, #242332 0, #242332 0.5px, transparent 0.5px) 100% 100%/3px 3px no-repeat,
+  linear-gradient(#242332, #242332) 50% 50%/calc(100% - 4px) calc(100% - 6px) no-repeat,
+  linear-gradient(#242332, #242332) 50% 50%/calc(100% - 6px) calc(100% - 4px) no-repeat,
+  linear-gradient(130deg, #4846679a 0%, rgba(102, 193, 238, 0.767) 100%);
+border-radius: 3px;
+padding: 10px;
+box-sizing: border-box;
+}

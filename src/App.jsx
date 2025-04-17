@@ -1,9 +1,9 @@
-import { Element } from "react-scroll"
 import Sidebar from "./components/sidebar/SideNavBar"
 import TopNavigation from "./components/Navigation"
 import Home from "./sections/home/Home"
 import { useEffect, useState } from "react";
 import DotPagination from "./components/DotPagination";
+import Tetch from "./sections/tech/Tech";
 function App() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -47,9 +47,7 @@ function App() {
 			<div className="ml-64 w-10/12">
 				<TopNavigation />
 				<Home />
-				<Element name="tech" className="min-h-screen bg-transparent p-8">
-					Tech Section
-				</Element>
+				<Tetch />
 				
 			</div>
 
