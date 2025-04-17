@@ -1,5 +1,6 @@
 import { Element } from "react-scroll"
 import Box from "../../components/Box";
+import CustomBarChart from "./BarChart";
 
 const techStackList = [
     {name:'JavaScript', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png'},
@@ -25,7 +26,7 @@ const techStackList = [
 
 export default function Tetch() {
     return (
-    <Element name="tech" className="min-h-screen w-11/12 mx-auto mt-30 bg-transparent p-8 flex flex-col gap-2">
+    <Element name="tech" className="min-h-screen w-10/12 mx-auto mt-30 bg-transparent p-8 flex flex-col gap-3">
         <Box 
         headther={{
             textPosition:'center',
@@ -33,7 +34,7 @@ export default function Tetch() {
             marginB:'5'}} 
         >
 
-        <div className="flex flex-wrap gap-2 p-2">
+        <div className="flex flex-wrap gap-2 p-2 pb-10">
         {techStackList.map(el => (
             <div key={el.name} className="flex gap-2 w-40 p-2 tech-border">
                 <img src={el.img} className="w-6 h-6" />
@@ -44,8 +45,8 @@ export default function Tetch() {
 
         </Box>
         <div>
-            <Box className="w-1/2">
-
+            <Box className="w-[45%]">
+                <CustomBarChart />
             </Box>
         </div>
     </Element>
