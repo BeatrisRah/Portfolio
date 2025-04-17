@@ -13,8 +13,8 @@ const techStackList = [
     {name:'CSS', img:'https://cdn.worldvectorlogo.com/logos/css-3.svg'},
     {name:'MongoDB', img:'https://images.icon-icons.com/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png'},
     {name:'Mongoose', img:'https://avatars.githubusercontent.com/u/7552965?s=280&v=4'},
-    {name:'Electron', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/2048px-Electron_Software_Framework_Logo.svg.png'},
     {name:'Firebase', img:'https://brandeps.com/logo-download/F/Firebase-logo-02.png'},
+    {name:'Electron', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/2048px-Electron_Software_Framework_Logo.svg.png'},
     {name:'Vite', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1200px-Vitejs-logo.svg.png'},
     {name:'Vercel', img:'https://static-00.iconduck.com/assets.00/vercel-icon-256x225-ble4fz4r.png'},
     {name:'Figma', img:'https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png'},
@@ -25,12 +25,11 @@ const techStackList = [
 
 export default function Tetch() {
     return (
-    <Element name="tech" className="min-h-screen w-11/12 mx-auto mt-30 bg-transparent p-8">
+    <Element name="tech" className="min-h-screen w-11/12 mx-auto mt-30 bg-transparent p-8 flex flex-col gap-2">
         <Box 
-        className=""
         headther={{
             textPosition:'center',
-            title:'My Technologies', 
+            title:'My Technologies && Tools', 
             marginB:'5'}} 
         >
 
@@ -44,6 +43,11 @@ export default function Tetch() {
         </div>
 
         </Box>
+        <div>
+            <Box className="w-1/2">
+
+            </Box>
+        </div>
     </Element>
     );
 }
