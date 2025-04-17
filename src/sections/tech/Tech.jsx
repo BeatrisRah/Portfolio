@@ -28,6 +28,7 @@ export default function Tetch() {
     return (
     <Element name="tech" className="min-h-screen w-10/12 mx-auto mt-30 bg-transparent p-8 flex flex-col gap-3">
         <Box 
+        className="min-h-80"
         headther={{
             textPosition:'center',
             title:'My Technologies && Tools', 
@@ -44,10 +45,20 @@ export default function Tetch() {
         </div>
 
         </Box>
-        <div>
+        <div className="flex gap-5">
             <Box className="w-[45%]">
                 <CustomBarChart />
             </Box>
+            <div>
+                <h1 className="text-3xl jersay">My Stack Usage Levels</h1>
+                <ul>
+                    <li>Vibing to music | 0 - 1000  </li>
+                    <li>Fisrt Coffee | 1000 - 2500 </li>
+                    <li>Podcast && Second Coffee | 2500 - 3000 </li>
+                    <li>Last touches | 3000 - 4000 </li>
+
+                </ul>
+            </div>
         </div>
     </Element>
     );
