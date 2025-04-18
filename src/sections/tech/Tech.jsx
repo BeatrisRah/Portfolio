@@ -49,7 +49,7 @@ export default function Tetch() {
             <Box className="w-[45%]">
                 <CustomBarChart />
             </Box>
-            <div className="p-6">
+            <div className="p-6 ml-6">
                 <h1 className="text-4xl jersay mb-4">My Stack Usage Levels</h1>
                 <ul className="grid grid-cols-2 gap-y-2 text-lg max-w-md ml-4">
                     <li className="text-left">Vibing to music</li>
