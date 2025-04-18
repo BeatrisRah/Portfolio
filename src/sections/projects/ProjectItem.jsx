@@ -14,10 +14,12 @@ export default function ProjectItem({ project }) {
         setActiveTab(tab)
     }
 
+    const width = project.grow > 0 ? 'w-[50%]' : 'w-[40%]'
+
     return (
         <Box
             headther={{ title: project.name, marginB:4 }}
-            className={`w-${project.grow > 0 ? '1/2' : '1/3'} h-[26rem]`}
+            className={`${width} h-[26rem]`}
         >
             <div className="flex flex-wrap w-full h-11/12">
                 <div className="w-1/2 h-1/2">
@@ -27,7 +29,7 @@ export default function ProjectItem({ project }) {
                     {activeTab === 'Links' && <LinksTab links={project.links} />}
                 </div>
                 <div className="w-1/2 h-1/2">
-                    <img src={project.image} className="w-11/12 mx-auto h-full" />
+                    <img src={project.image} className="w-80 mx-auto h-full" />
                 </div>
                 <div className="w-full flex flex-wrap gap-2 h-20">
                 {project.techStack.map(t => <TechItem tech={t} />)}
