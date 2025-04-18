@@ -14,9 +14,10 @@ export const projects = [
             "Real-Time Chat",
             "Admin Events"
         ],//bullet point
-        links:[
-            {git:'https://github.com/BeatrisRah/BookSwap', hosted:'https://bookswap-f06b7.web.app/'}
-        ],
+        links:{
+            git:'https://github.com/BeatrisRah/BookSwap',
+            hosted:'https://bookswap-f06b7.web.app/',
+        },
         techStack:[
             techStackList.JavaScript,
             techStackList.React,
