@@ -3,7 +3,7 @@ const tabs = ["Info", "Features", "Links"];
 
 export default function TabNav({onChange, activeTab}) {
    return (
-    <div className="flex">
+    <div className="flex mb-3">
     {tabs.map((tab, index) => (
         <div key={tab} className="flex items-center">
             <button
