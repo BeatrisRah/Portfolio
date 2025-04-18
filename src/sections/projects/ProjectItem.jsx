@@ -2,6 +2,7 @@ import { useState } from "react";
 import Box from "../../components/Box";
 import TabNav from "./TabNav";
 import InfoTab from "./tab-content/Info";
+import FeaturesTab from "./tab-content/Features";
 
 
 export default function ProjectItem({ project }) {
@@ -20,6 +21,7 @@ export default function ProjectItem({ project }) {
                 <div className="w-1/2 h-1/2">
                     <TabNav onChange={onChange} activeTab={activeTab} />
                     {activeTab === 'Info' && <InfoTab info={project.info} />}
+                    {activeTab === 'Features' && <FeaturesTab featuresArr={project.features} />}
                 </div>
                 <div className="w-1/2 h-1/2">
                     <img src={project.image} className="w-11/12 mx-auto h-full" />
