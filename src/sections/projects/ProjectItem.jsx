@@ -1,14 +1,29 @@
 import { useState } from "react";
 import Box from "../../components/Box";
+import TabNav from "./TabNav";
 
-export default function ProjectItem({project}) {
-    const [tab, setTab] = useState('info')
+
+export default function ProjectItem({ project }) {
+    const [activeTab, setActiveTab] = useState("Info");
+
+    const onChange = (tab) => {
+        setActiveTab(tab)
+    }
+
     return (
-        <Box 
-        headther={{title:project.name}}
-        className={`w-${project.grow > 0 ? '1/2': '1/3'}`}
+        <Box
+            headther={{ title: project.name, marginB:4 }}
+            className={`w-${project.grow > 0 ? '1/2' : '1/3'} h-90`}
         >
-
+            <div className="flex flex-wrap w-full h-11/12">
+                <div className="w-1/2 h-1/2">
+                    <TabNav onChange={onChange} activeTab={activeTab} />
+                </div>
+                <div className="w-1/2 h-1/2">
+                    <img src={project.image} className="w-11/12 mx-auto h-full" />
+                </div>
+                <div className="w-full h-1/2"></div>
+            </div>
 
         </Box>
     );
