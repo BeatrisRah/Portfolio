@@ -1,6 +1,7 @@
 import { Element } from "react-scroll"
 import Box from "../../components/Box";
 import CustomBarChart from "./BarChart";
+import TechItem from "./TechItem";
 
 const techStackList = [
     {name:'JavaScript', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png'},
@@ -36,12 +37,7 @@ export default function Tetch() {
         >
 
         <div className="flex flex-wrap gap-2 p-2 pb-10">
-        {techStackList.map(el => (
-            <div key={el.name} className="flex gap-2 w-40 p-2 tech-border">
-                <img src={el.img} className="w-6 h-6" />
-                <p>{el.name}</p>
-            </div>
-        ))}
+        {techStackList.map(el => <TechItem tech={el} />)}
         </div>
 
         </Box>
