@@ -23,8 +23,30 @@ export const projects = [
             techStackList.React,
             techStackList.Tailwind,
             techStackList.Firebase,
-            {name:'cCloudinary', img:'https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/cloudinary-icon-ug0qqy8ms6ozyzy6cntbll.png/cloudinary-icon-hz05evx1htrghud89kpab4.png?_a=DAJFJtWIZAAC'}
+            {name:'Cloudinary', img:'https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/1/cloudinary-icon-ug0qqy8ms6ozyzy6cntbll.png/cloudinary-icon-hz05evx1htrghud89kpab4.png?_a=DAJFJtWIZAAC'}
         ],
         grow:1
+    },
+    {
+        name: 'VibeChat', 
+        gitUrl:'https://github.com/BeatrisRah/VibeChat', 
+        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        info:'Chatroom app for users to intercat, using Socket.IO',
+        features:[
+            "User Authentication",
+            "Chatrooms",
+            "Real-Time Chat with Socket.io",
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/VibeChat',
+        },
+        techStack:[
+            techStackList.JavaScript,
+            techStackList.React,
+            techStackList.Tailwind,
+            techStackList["React Query"],
+            techStackList.Redux
+        ],
+        grow:0
     }
 ]

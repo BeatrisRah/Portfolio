@@ -4,6 +4,7 @@ import TabNav from "./TabNav";
 import InfoTab from "./tab-content/Info";
 import FeaturesTab from "./tab-content/Features";
 import LinksTab from "./tab-content/Links";
+import TechItem from "../tech/TechItem";
 
 
 export default function ProjectItem({ project }) {
@@ -16,7 +17,7 @@ export default function ProjectItem({ project }) {
     return (
         <Box
             headther={{ title: project.name, marginB:4 }}
-            className={`w-${project.grow > 0 ? '1/2' : '1/3'} h-98`}
+            className={`w-${project.grow > 0 ? '1/2' : '1/3'} h-[26rem]`}
         >
             <div className="flex flex-wrap w-full h-11/12">
                 <div className="w-1/2 h-1/2">
@@ -28,7 +29,9 @@ export default function ProjectItem({ project }) {
                 <div className="w-1/2 h-1/2">
                     <img src={project.image} className="w-11/12 mx-auto h-full" />
                 </div>
-                <div className="w-full h-1/2"></div>
+                <div className="w-full flex flex-wrap gap-2 h-20">
+                {project.techStack.map(t => <TechItem tech={t} />)}
+                </div>
             </div>
 
         </Box>

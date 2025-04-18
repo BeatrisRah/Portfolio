@@ -4,7 +4,7 @@ import Home from "./sections/home/Home"
 import { useEffect, useState } from "react";
 import DotPagination from "./components/DotPagination";
 import Tetch from "./sections/tech/Tech";
-import Projects from "./sections/projects/Projects";
+import Projects from "./sections/projects/Projects.jsx";
 function App() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
