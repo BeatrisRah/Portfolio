@@ -21,7 +21,7 @@ export default function ProjectItem({ project }) {
             headther={{ title: project.name, marginB:4 }}
             className={`${width} h-[26rem]`}
         >
-            <div className="flex flex-wrap w-full h-11/12">
+            <div className="flex flex-wrap w-full overflow-hidden h-full p-2">
                 <div className="w-1/2 h-1/2">
                     <TabNav onChange={onChange} activeTab={activeTab} />
                     {activeTab === 'Info' && <InfoTab info={project.info} />}

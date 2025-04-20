@@ -3,7 +3,7 @@ export default function LinksTab({links}) {
     <ul>
         <li className="mb-2">
             <span className="font-bold">GitHub:</span> <br /> 
-            <a href={links.git} target="_blank" rel="noopener noreferrer" className="text-pink-400" >{links.git}</a>
+            <a href={links.git} target="_blank" rel="noopener noreferrer" className="text-pink-400 break-words" >{links.git}</a>
         </li>
        
         <li>

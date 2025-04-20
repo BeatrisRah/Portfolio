@@ -7,7 +7,7 @@ import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
    return (
-        <Element name="projects" className="min-h-screen flex gap-2 flex-wrap">
+        <Element name="projects" className="flex gap-2 p-4 flex-wrap ml-40">
             {projects.map(p => <ProjectItem project={p} />)}
         </Element>
    );

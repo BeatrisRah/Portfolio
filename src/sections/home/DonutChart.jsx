@@ -1,7 +1,7 @@
 export default function DonutChart({ size = 260, stroke = 30, className = '' }) {
     const data = [
         { label: 'Coding', percent: 50, color: '#ff57c4' },
-        { label: 'Debugging', percent: 35, color: '#9b5de5' },
+        { label: 'Debugging', percent: 25, color: '#9b5de5' },
         { label: 'Naming things', percent: 10, color: '#F4C61A' },
         { label: 'Googling', percent: 15, color: '#00bbf9' },
     ];

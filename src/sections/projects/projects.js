@@ -45,8 +45,31 @@ export const projects = [
             techStackList.React,
             techStackList.Tailwind,
             techStackList["React Query"],
-            techStackList.Redux
+            techStackList.Redux,
+            {name:'DaisyUI', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjriJ3Pylplf9wiqVZiSuuCQGomHicU1J0XjdtC4IzwweHqMrus3lLGiZ_TjXds6bLAs&usqp=CAU'}
         ],
         grow:0
+    },
+    {
+        name: 'VersaCore', 
+        gitUrl:'https://github.com/BeatrisRah/VersaCore', 
+        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        info:'Chatroom app for users to intercat, using Socket.IO',
+        features:[
+            "Persistent Data with MongoDB",
+            // "User Authentication",
+            "Real-Time Chat with Socket.io",
+            "Multiple Collections (chatrooms, messages, users...)",
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/VersaCore',
+        },
+        techStack:[
+            techStackList.JavaScript,
+            techStackList.ExpressJS,
+            techStackList.MongoDB,
+            techStackList.Mongoose
+        ],
+        grow:1
     }
 ]
