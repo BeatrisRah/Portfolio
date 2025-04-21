@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import DotPagination from "./components/DotPagination";
 import Tetch from "./sections/tech/Tech";
 import Projects from "./sections/projects/Projects.jsx";
+import Education from "./sections/education/EducationSection.jsx";
 function App() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -50,7 +51,7 @@ function App() {
 				<Home />
 				<Tetch />
 				<Projects />
-				
+				<Education />
 			</div>
 
 			<DotPagination />

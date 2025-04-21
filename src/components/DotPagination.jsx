@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-const sections = ['home', 'tech', 'projects', 'contact'];
+const sections = ['home', 'tech', 'projects','education', 'contact'];
 
 export default function DotPagination() {
 
