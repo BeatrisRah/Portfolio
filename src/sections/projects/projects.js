@@ -31,7 +31,7 @@ export const projects = [
         name: 'VibeChat', 
         gitUrl:'https://github.com/BeatrisRah/VibeChat', 
         image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
-        info:'Chatroom app for users to intercat, using Socket.IO',
+        info:'Chatroom app for users to intercat, using Socket.IO and VersaCore for back-end.',
         features:[
             "User Authentication",
             "Chatrooms",
@@ -51,13 +51,32 @@ export const projects = [
         grow:0
     },
     {
+        name: 'UserManagementSystem', 
+        gitUrl:'https://github.com/BeatrisRah/UserManagementSystem', 
+        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        info:'ExpressJS application where admins can manage users profiles. Using dummyjson for mimicking REST API JSON Data.',
+        features:[
+            "User Authentication",
+            "CRUD Operations",
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/UserManagementSystem',
+        },
+        techStack:[
+            techStackList.JavaScript,
+            techStackList.ExpressJS,
+            {name:'Handlebars', img:'https://devswag.com/cdn/shop/products/handlebars-shirt-front_1024x1024.png?v=1571438516'}
+        ],
+        grow:0
+    },
+    {
         name: 'VersaCore', 
         gitUrl:'https://github.com/BeatrisRah/VersaCore', 
         image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
-        info:'Chatroom app for users to intercat, using Socket.IO',
+        info:'ExpressJS server for running multiple projects.',
         features:[
-            "Persistent Data with MongoDB",
-            // "User Authentication",
+            // "Persistent Data with MongoDB",
+            "User Authentication",
             "Real-Time Chat with Socket.io",
             "Multiple Collections (chatrooms, messages, users...)",
         ],//bullet point
