@@ -2,7 +2,7 @@ import { Element } from "react-scroll";
 const items = [
     {
         title: "TypeScript",
-        desc: "Static typing, OOP, classes, interfaces, generics, modules, decorators, and scalable TypeScript app architecture.",
+        desc: "Static typing, OOP, classes, interfaces, generics, modules, decorators, and scalable TypeScript app architecture. (currently enrolled)",
         link:null
     },
     {

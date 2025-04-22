@@ -35,7 +35,7 @@ function App() {
 		left: 0,
 		width: '100%',
 		zIndex: -1,
-		transition: 'background 0.1s ease', // Smooth transition
+		transition: 'background-position 0.1s ease', // Smooth transition
 	  }
 	return (
 		<div className="flex relative">
