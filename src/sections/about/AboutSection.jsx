@@ -11,7 +11,7 @@ export default function About() {
         <div>
             <Content command={currentCommand} />
         </div>
-        <div className="flex items-start">
+        <div className="flex items-start gap-4 mt-6">
             <CommandList />
             <Terminal onChangeCommand={setCurrentCommand} />
         </div>
