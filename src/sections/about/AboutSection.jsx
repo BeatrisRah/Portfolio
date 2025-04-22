@@ -9,7 +9,7 @@ export default function About() {
     // const [tab, setTab] = useState('personal');
 
    return (
-       <Element name="about" className="min-h-screen p-8 w-11/12 mx-auto">
+       <Element name="about" className="min-h-screen p-8 w-11/12 mt-20 mx-auto">
         <div>
             <Content command={currentCommand} />
         </div>

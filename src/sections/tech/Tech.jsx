@@ -7,7 +7,7 @@ import { techStackList } from "../../data/techStackList";
 
 export default function Tetch() {
     return (
-    <Element name="tech" className="relative min-h-screen w-10/12 mx-auto mt-30 bg-transparent p-8 flex flex-col gap-3">
+    <Element name="tech" className="relative min-h-screen w-10/12 mx-auto my-10 bg-transparent p-8 flex flex-col gap-3">
         <Box 
         className="min-h-80"
         headther={{

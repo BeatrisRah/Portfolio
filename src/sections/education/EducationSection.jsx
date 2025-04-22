@@ -29,7 +29,7 @@ const items = [
 
 export default function Education() {
     return (
-        <Element name="education" className="min-h-screen mt-30">
+        <Element name="education" className="min-h-screen p-4">
             <div className="relative px-6 py-10">
                 <div className="absolute left-1/2 top-30 -bottom-10 w-px bg-gray-400/40 -translate-x-1/2"></div>
 
