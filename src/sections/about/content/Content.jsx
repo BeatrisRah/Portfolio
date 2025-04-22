@@ -1,4 +1,7 @@
+import ContentElements from "./ContentElements";
+
 export default function Content({command}) {
+   
 
    return (
       <div className="w-3/5 h-[30rem] bg-[#11121B]/80">
@@ -7,6 +10,7 @@ export default function Content({command}) {
          </div>
          <div className="relative w-full h-11/12">
             {command.trim() === '' && <WaitingState />}
+            {command.trim() !== '' && <ContentElements command={command} />}
          </div>
       </div>
    );

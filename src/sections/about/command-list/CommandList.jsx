@@ -4,7 +4,6 @@ import { personalCommandList, SystemCommnadList } from "../commandListJson";
 
 export default function CommandList({tabType = 'personal'}) {
     const [isOpen, setIsOpen] = useState(false);
-    const [tab, setTab] = useState(tabType);
 
     const toggle = () => setIsOpen(!isOpen);
     return (
@@ -21,8 +20,8 @@ export default function CommandList({tabType = 'personal'}) {
                 <>
                     <p className="mt-4">personal/system</p>
                     <ul className="mt-3 space-y-2">
-                        {tab === 'personal' && personalCommandList.map(formatCommentInLine)}
-                        {tab === 'system' && SystemCommnadList.map(formatCommentInLine)}
+                        {tabType === 'personal' && personalCommandList.map(formatCommentInLine)}
+                        {tabType === 'system' && SystemCommnadList.map(formatCommentInLine)}
                     </ul>
                 </>
             )}

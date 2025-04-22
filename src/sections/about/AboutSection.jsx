@@ -6,6 +6,8 @@ import Terminal from "./terminal/Terminal";
 
 export default function About() {
     const [currentCommand, setCurrentCommand] = useState('')
+    // const [tab, setTab] = useState('personal');
+
    return (
        <Element name="about" className="min-h-screen p-8 w-11/12 mx-auto">
         <div>

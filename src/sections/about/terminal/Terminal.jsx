@@ -33,7 +33,7 @@ export default function Terminal({ onChangeCommand }) {
                 <input
                     type="text"
                     placeholder="Type something..."
-                    className="flex-1 bg-transparent text-pink-500 outline-none border-none focus:ring-0 focus:border-transparent"
+                    className="flex-1 bg-transparent text-pink-400 outline-none border-none focus:ring-0 focus:border-transparent"
                     value={input}
                     onChange={(e) => setInputValue(e.target.value)}
                     onKeyDown={handleKeyDown}
