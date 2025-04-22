@@ -1,6 +1,11 @@
 import { Element } from "react-scroll";
 const items = [
     {
+        title: "TypeScript",
+        desc: "Static typing, OOP, classes, interfaces, generics, modules, decorators, and scalable TypeScript app architecture.",
+        link:null
+    },
+    {
         title: "ReactJS",
         desc: "Components, props, state, hooks, context, routing, and scalable UI designwith modern best practices.",
         link:'https://softuni.bg/certificates/details/241537/56f23cc9'
@@ -12,15 +17,13 @@ const items = [
     },
     {
         title: "JavaScript Applications",
-        desc: "Built dynamic web apps using REST, async programming, SPA architecture, client-side rendering, routing, testing, and modular design. ",
+        desc: "Built dynamic web apps using REST, async programming, SPA architecture, client-side rendering, routing, testing, and modular design.",
+        link:'https://softuni.bg/certificates/details/231974/0d0e7a28'
     },
     {
         title: "JavaScript Advanced",
-        desc: "Lorem sm smsn mmm msmsmmsm llslslx",
-    },
-    {
-        title: "JavaScript Advanced",
-        desc: "Lorem sm smsn mmm msmsmmsm llslslx",
+        desc: "Strong JavaScript skills: syntax, DOM, events, OOP, advanced functions, unit testing, and best practices for interactive web development. ",
+        link:'https://softuni.bg/certificates/details/227991/9306f4cb'
     },
 ];
 
