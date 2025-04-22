@@ -24,6 +24,14 @@ export default function Sidebar() {
                 {navLinks.map(el => <SideBarItem key={el.path} {...el} />)}
                 
             </nav>
+            <div className="mt-auto p-4">
+                <button className="w-full btn-glow px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 transition">
+                <a
+                href="/Beatris_CV.pdf"
+                download
+                >Download CV</a>
+                </button>
+            </div>
         </div>
 
     );
