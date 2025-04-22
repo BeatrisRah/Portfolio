@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Element } from "react-scroll";
 import Content from "./content/Content";
 import CommandList from "./command-list/CommandList";
+import Terminal from "./terminal/Terminal";
 
 export default function About() {
     const [currentCommand, setCurrentCommand] = useState('')
@@ -10,8 +11,9 @@ export default function About() {
         <div>
             <Content command={currentCommand} />
         </div>
-        <div>
+        <div className="flex items-start">
             <CommandList />
+            <Terminal onChangeCommand={setCurrentCommand} />
         </div>
 
        </Element>
