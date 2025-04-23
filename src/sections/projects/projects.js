@@ -5,7 +5,7 @@ export const projects = [
     {
         name: 'BookSwap', 
         gitUrl:'https://github.com/BeatrisRah/BookSwap', 
-        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        image: new URL('./assets/book_swap.png', import.meta.url).href,
         info:'BookSwap is a platform where users can trade, sell, or donate books with others in their community. It allows users to list books, browse available books, interact with other users, and arrange book exchanges or purchases.',
         features:[
             "User Authentication",
@@ -90,5 +90,41 @@ export const projects = [
             techStackList.Mongoose
         ],
         grow:1
-    }
+    },
+    {
+        name: 'Store', 
+        gitUrl:'https://github.com/BeatrisRah/BookSwap', 
+        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        info:'Application that helps you easily keep track of your store items.',
+        features:[
+            "Item Managment",
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/',
+        },
+        techStack:[
+            
+        ],
+        grow:1
+    },
+    {
+        name: 'NoteApp', 
+        gitUrl:'https://github.com/BeatrisRah/SoftUni-React/tree/main/react-typescript', 
+        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        info:'Simple NoteApp made to practice Typescript + React.',
+        features:[
+            "Making Notes",
+            "Making Lists"
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/SoftUni-React/tree/main/react-typescript',
+            hosted:'https://noteapp-typescript-flame.vercel.app/',
+        },
+        techStack:[
+            techStackList.TypeScript,
+            techStackList.React,
+            {name:'MUI', img:'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg' }
+        ],
+        grow:0
+    },
 ]

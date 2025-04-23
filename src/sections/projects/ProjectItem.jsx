@@ -29,7 +29,7 @@ export default function ProjectItem({ project }) {
                     {activeTab === 'Links' && <LinksTab links={project.links} />}
                 </div>
                 <div className="w-1/2 h-1/2">
-                    <img src={project.image} className="w-80 mx-auto h-full" />
+                    <img src={project.image} className="w-80 mx-auto h-full object-scale-down" />
                 </div>
                 <div className="w-full flex flex-wrap gap-2 h-20">
                 {project.techStack.map(t => <TechItem tech={t} />)}

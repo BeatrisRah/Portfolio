@@ -1,5 +1,6 @@
 export const techStackList = {
     JavaScript:{name:'JavaScript', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png'},
+    TypeScript:{name:'TypeScript', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png'},
     NodeJS:{name:'NodeJS', img:'https://cdn-icons-png.flaticon.com/512/5968/5968322.png'},
     ExpressJS:{name:'ExpressJS', img:'https://www.manektech.com/storage/developer/1646733543.webp'},
     React:{name:'React', img:'https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-2945110.png?f=webp&w=256'},
