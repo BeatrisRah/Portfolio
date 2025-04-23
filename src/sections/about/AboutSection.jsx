@@ -10,10 +10,7 @@ export default function About() {
 
     useEffect(() => {
         if(currentCommand === 'cd system' || currentCommand === 'cd personal')
-        
-        
         setTab(currentCommand.replace('cd ', ''))
-        setCurrentCommand('')
     }, [currentCommand])
 
    return (

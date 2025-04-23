@@ -92,6 +92,11 @@ export default function ContentElements({ command }) {
 
                 </div>
             );
+        case 'cd system':
+        case 'cd personal':
+            return(
+                <p>Command list changed!</p>
+            )
     }
 
     return <p>Invalid command</p>;
