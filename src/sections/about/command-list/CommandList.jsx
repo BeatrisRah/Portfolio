@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
-import { personalCommandList, SystemCommnadList } from "../commandListJson";
+import { personalCommandList, systemCommnadList } from "../commandListJson";
 
-export default function CommandList({tabType = 'personal'}) {
+export default function CommandList({tabType}) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -21,7 +21,7 @@ export default function CommandList({tabType = 'personal'}) {
                     <p className="mt-4">personal/system</p>
                     <ul className="mt-3 space-y-2">
                         {tabType === 'personal' && personalCommandList.map(formatCommentInLine)}
-                        {tabType === 'system' && SystemCommnadList.map(formatCommentInLine)}
+                        {tabType === 'system' && systemCommnadList.map(formatCommentInLine)}
                     </ul>
                 </>
             )}

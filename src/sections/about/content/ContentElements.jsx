@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import { Typewriter } from "react-simple-typewriter";
 
 
 const funFacts = [

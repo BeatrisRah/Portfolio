@@ -6,7 +6,7 @@ export const personalCommandList = [
     { name: 'cd system', description:'Show system list of commands'},
 ]
 
-export const SystemCommnadList = [
+export const systemCommnadList = [
     { name: 'help', description:'Lists all commands'},
     { name: 'clear', description:'Clears terminal'},
     { name: 'ls', description:'Lists content of site'},
