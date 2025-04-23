@@ -1,4 +1,6 @@
 import { useMemo } from "react";
+import { Typewriter } from "react-simple-typewriter";
+
 
 const funFacts = [
     "Coffee is my compiler.",
@@ -15,7 +17,7 @@ export default function ContentElements({ command }) {
     switch (command) {
         case "curl currently-learning":
             return (
-                <div className=" text-white p-6 rounded-b-md shadow-md font-mono space-y-4">
+                <div className=" text-white p-6 rounded-b-md font-mono space-y-4">
                     <p className="text-green-400">
                         ➤ Here’s what I’m learning right now:
                     </p>

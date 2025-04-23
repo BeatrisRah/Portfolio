@@ -10,7 +10,7 @@ export default function Content({command}) {
          </div>
          <div className="relative w-full h-11/12">
             {command.trim() === '' && <WaitingState />}
-            {command.trim() !== '' && <ContentElements command={command} />}
+            {command.trim() !== '' && <ContentElements command={command.trim()} />}
          </div>
       </div>
    );

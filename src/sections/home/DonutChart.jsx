@@ -26,7 +26,7 @@ export default function DonutChart({ size = 260, stroke = 30, className = '' }) 
                 ))}
             </ul>
             <svg
-                className="donut-spin w-1/2"
+                className="donut-spin w-1/2 mt-5"
                 width={size}
                 height={size}
                 viewBox={`0 0 ${size} ${size}`}
