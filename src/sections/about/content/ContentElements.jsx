@@ -18,8 +18,13 @@ export default function ContentElements({ command }) {
             return <FunFact />
         case 'cd system':
         case 'cd personal':
-            return(
-                <p>Command list changed!</p>
+            return (
+              <div className="text-white p-5  border-t border-blue-500 space-y-2">
+                <p className="text-green-400">Directory changed!</p>
+                <p className="text-yellow-300">📂 Command list updated!</p>
+                
+              </div>
+
             )
         case 'help':
             return <HelpCommandContent />
