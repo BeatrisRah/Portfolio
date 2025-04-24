@@ -29,7 +29,7 @@ export default function CommandList({tabType}) {
 
 
                             {i < tabTypes.length - 1 && (
-                                <span className="mx-3 text-pink-500/30 select-none">/</span>
+                                <span className="mx-3 text-pink-500/50 select-none">/</span>
                             )}
                         </>)}
                     </div>

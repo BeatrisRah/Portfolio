@@ -8,7 +8,7 @@ export default function Content({command}) {
          <div className="w-full bg-[#11121B]/80 p-2">
             <p className="jersay text-xl px-2">Content</p>
          </div>
-         <div className="relative w-full h-11/12">
+         <div className="relative w-full h-11/12 p-2">
             {command.trim() === '' && <WaitingState />}
             {command.trim() !== '' && <ContentElements command={command.trim()} />}
          </div>

@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import InvalidCommandTerminal from "./InvalidCommand";
 
 
 const funFacts = [
@@ -22,20 +23,20 @@ export default function ContentElements({ command }) {
                     </p>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>
-                            <span className="text-pink-400">React Performance</span> –
-                            optimizing re-renders, memoization & lazy loading
+                            <span className="text-pink-400">C# WPF</span> –
+                             to create a Windows Desktop .NET application in C#
                         </li>
                         <li>
-                            <span className="text-yellow-300">Framer Motion</span> – building
-                            fluid animations for UI & transitions
+                            <span className="text-yellow-300">PostgreSQL</span> – 
+                            relational database
                         </li>
                         <li>
-                            <span className="text-blue-400">Three.js</span> – learning 3D
-                            rendering and scene creation
+                            <span className="text-blue-400">TypeScript</span> – 
+                            types, enums, union types and more
                         </li>
                         <li>
-                            <span className="text-teal-300">Tailwind + ShadCN</span> –
-                            crafting clean & responsive UI components
+                            <span className="text-teal-300">Phaser</span> –
+                            game development using javascript
                         </li>
                     </ul>
                 </div>
