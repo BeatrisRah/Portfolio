@@ -1,9 +1,9 @@
 
-import InvalidCommandTerminal from "./InvalidCommand";
-import CurrentlyLearning from "./CurrenlyLearning";
-import Hobbies from "./Hobbies";
-import FunFact from "./FunFact";
-import HelpCommandContent from "./HelpCommand";
+import InvalidCommandTerminal from "./element/InvalidCommand";
+import CurrentlyLearning from "./element/CurrenlyLearning";
+import Hobbies from "./element/Hobbies";
+import FunFact from "./element/FunFact";
+import HelpCommandContent from "./element/HelpCommand";
 
 
 
@@ -28,6 +28,10 @@ export default function ContentElements({ command }) {
             )
         case 'help':
             return <HelpCommandContent />
+        case 'clear':
+            return(
+                <p className="text-green-400">Terminal Cleared!</p>
+            )
     }
 
     return <InvalidCommandTerminal command={command} />

@@ -1,4 +1,5 @@
-import { personalCommandList, systemCommnadList } from "../commandListJson";
+import { personalCommandList, systemCommnadList } from "../../commandListJson";
+
 
 export default function HelpCommandContent() {
     const commands = [...personalCommandList, ...systemCommnadList]
