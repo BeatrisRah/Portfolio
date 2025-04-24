@@ -48,6 +48,8 @@ import FunFact from "./FunFact";
             return(
                 <p>Command list changed!</p>
             )
+        case 'help':
+            return <HelpCommandContent />
     }
 
     return <InvalidCommandTerminal command={command} />
