@@ -20,7 +20,7 @@ export default function About() {
         </div>
         <div className="flex items-start gap-4 mt-6">
             <CommandList tabType={tab} />
-            <Terminal onChangeCommand={setCurrentCommand} />
+            <Terminal onChangeCommand={setCurrentCommand} command={currentCommand} />
         </div>
 
        </Element>

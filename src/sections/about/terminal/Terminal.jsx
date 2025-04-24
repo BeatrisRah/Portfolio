@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function Terminal({ onChangeCommand }) {
+export default function Terminal({ onChangeCommand, command }) {
     const [input, setInputValue] = useState('')
     const [history, setHistory] = useState([])
 
@@ -12,6 +12,9 @@ export default function Terminal({ onChangeCommand }) {
             setInputValue("");
         }
     };
+    useEffect(() => {
+        if(command === 'clear') setHistory([])
+    }, [command])
 
     return (
         <div className="bg-[#11121B]/80 w-1/2 h-70 flex flex-col">
