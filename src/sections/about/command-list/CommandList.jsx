@@ -2,6 +2,8 @@ import { useState } from "react";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { personalCommandList, systemCommnadList } from "../commandListJson";
 
+const tabTypes = ['personal', 'system']
+
 export default function CommandList({tabType}) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +20,19 @@ export default function CommandList({tabType}) {
 
             {isOpen && (
                 <>
-                    <p className="mt-4">personal/system</p>
+                    <div className="flex mt-2 px-2">
+                        {tabTypes.map((el, i) => <>
+                            <p 
+                                key={i}
+                                className={`text-pink-500 ${tabType === el ? 'border-b-1 border-pink-500' :''}`}
+                            >{el}</p>
+
+
+                            {i < tabTypes.length - 1 && (
+                                <span className="mx-3 text-pink-500/30 select-none">/</span>
+                            )}
+                        </>)}
+                    </div>
                     <ul className="mt-3 space-y-2">
                         {tabType === 'personal' && personalCommandList.map(formatCommentInLine)}
                         {tabType === 'system' && systemCommnadList.map(formatCommentInLine)}
