@@ -100,5 +100,5 @@ export default function ContentElements({ command }) {
             )
     }
 
-    return <p>Invalid command</p>;
+    return <InvalidCommandTerminal command={command} />
 }
