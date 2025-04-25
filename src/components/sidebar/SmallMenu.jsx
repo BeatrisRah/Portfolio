@@ -16,7 +16,7 @@ export default function SmallMenu() {
     ]
     
     return (
-        <ul className="menu bg-base-200 lg:menu-horizontal rounded-box xl:hidden">
+        <ul className="menu bg-base-200 menu-horizontal rounded-box xl:hidden">
             
             {navLinks.map(el => (
                 <li>
