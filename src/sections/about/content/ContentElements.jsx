@@ -11,6 +11,21 @@ import ThreadScanner from "./element/ThreadScanner";
 
 export default function ContentElements({ command }) {
 
+
+    if(command.startsWith('sudo')){
+        return(
+            <div className="text-red-400 p-6 rounded-b-md min-h-[180px] border-t border-red-500">
+                <p>🛑 Hold up!</p>
+                <p>You have attempted to invoke <code>sudo</code>.</p>
+                <p>Unfortunately, you are not in the <code>sudoers</code> file.</p>
+                <p>This incident will be reported... 😈</p>
+                <p className="mt-4 text-yellow-300 italic">
+                Tip: You don’t need root access to discover the secrets here. Just look closely. 👁
+                </p>
+            </div>
+        )
+    }
+
     switch (command) {
         case "curl currently-learning":
             return <CurrentlyLearning />
