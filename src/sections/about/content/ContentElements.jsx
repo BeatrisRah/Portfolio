@@ -4,6 +4,7 @@ import CurrentlyLearning from "./element/CurrenlyLearning";
 import Hobbies from "./element/Hobbies";
 import FunFact from "./element/FunFact";
 import HelpCommandContent from "./element/HelpCommand";
+import ListContent from "./element/ListWebsiteContent";
 
 
 
@@ -32,6 +33,8 @@ export default function ContentElements({ command }) {
             return(
                 <p className="text-green-400">Terminal Cleared!</p>
             )
+        case 'ls':
+            return <ListContent />
     }
 
     return <InvalidCommandTerminal command={command} />

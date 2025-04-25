@@ -5,7 +5,7 @@ import { FaLaptopCode, FaBook, FaUserAlt } from "react-icons/fa";
 
 const navLinks = [
     {path: 'home', name:'Home', icon: <MdHomeFilled />},
-    {path: 'tech', name:'Tetch', icon: <FaWrench />},
+    {path: 'tech', name:'Tech', icon: <FaWrench />},
     {path: 'projects', name:'Projects', icon: <FaLaptopCode />},
     {path: 'education', name:'Education', icon: <FaBook />},
     {path: 'about', name:'About me', icon: <FaUserAlt />}
