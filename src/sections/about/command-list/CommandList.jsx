@@ -9,7 +9,7 @@ export default function CommandList({tabType}) {
 
     const toggle = () => setIsOpen(!isOpen);
     return (
-        <div className="w-1/2 bg-[#11121B]/70">
+        <div className="w-full lg:w-1/2 bg-[#11121B]/70">
             <div
                 onClick={toggle}
                 className="flex items-center justify-between cursor-pointer p-4 select-none bg-[#D845A8]"

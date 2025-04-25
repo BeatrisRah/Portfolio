@@ -4,7 +4,7 @@ export default function Content({command}) {
    
 
    return (
-      <div className="w-3/5 h-[30rem] bg-[#11121B]/80">
+      <div className="w-3/5 lg:h-[30rem] bg-[#11121B]/80">
          <div className="w-full bg-[#11121B]/80 p-2">
             <p className="jersay text-xl px-2">Content</p>
          </div>
