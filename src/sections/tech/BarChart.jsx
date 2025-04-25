@@ -22,7 +22,7 @@ const data = [
 
 export default function CustomBarChart() {
    return (
-    <div className="p-2 rounded-xl w-full h-90">
+    <div className="p-2 rounded-xl w-full h-80 md:h-90">
     <ResponsiveContainer width="100%" height="100%">
       <BarChart data={data} barGap={4}>
         <CartesianGrid strokeDasharray="3 3" stroke="#2a2a3a" />

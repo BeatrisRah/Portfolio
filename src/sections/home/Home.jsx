@@ -48,7 +48,7 @@ export default function Home() {
                         </ul>
                     </Box>
                 </div>
-                <div className="flex flex-wrap gap-5 lg:w-2/3">
+                <div className="w-full flex flex-wrap gap-5 lg:w-2/3">
                     <div className="flex flex-wrap md:flex-nowrap gap-5 w-full">
                         <Box
                             headther={{ textPosition: 'center', title: 'Welcome' , marginB:'5' }}

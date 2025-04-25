@@ -31,7 +31,7 @@ export default function ProjectItem({ project }) {
                 <div className="lg:w-1/2 h-1/2 mt-2 lg:mt-3">
                     <img src={project.image} className="w-80 mx-auto h-50 object-scale-down" />
                 </div>
-                <div className="w-full flex flex-wrap gap-2 mt-5">
+                <div className="w-full flex flex-wrap gap-2 md:mt-5">
                 {project.techStack.map(t => <TechItem tech={t} />)}
                 </div>
             </div>
