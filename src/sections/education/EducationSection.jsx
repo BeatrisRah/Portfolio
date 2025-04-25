@@ -48,7 +48,7 @@ export default function Education() {
                             <div key={index} className={`relative flex justify-${isLeft ? "start" : "end"} items-center`}>
                                 <div className={`w-1/2 px-4 flex flex-col ${isLeft ? "text-right items-end" : "text-left items-start"}`}>
                                     <a href={item.link} target="_blank" rel="noopener noreferrer" ><h3 className="text-pink-400 font-semibold hover:text-pink-200 cursor-pointer">{item.title}</h3></a>
-                                    <p className="text-sm text-gray-300 cursor-default w-1/2">{item.desc}</p>
+                                    <p className="text-sm text-gray-300 cursor-default xl:w-1/2">{item.desc}</p>
                                 </div>
 
                                 {/* Dot */}
