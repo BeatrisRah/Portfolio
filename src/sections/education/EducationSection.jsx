@@ -3,27 +3,27 @@ const items = [
     {
         title: "TypeScript",
         desc: "Static typing, OOP, classes, interfaces, generics, modules, decorators, and scalable TypeScript app architecture. (currently enrolled)",
-        link:null
+        link: null
     },
     {
         title: "ReactJS",
         desc: "Components, props, state, hooks, context, routing, and scalable UI designwith modern best practices.",
-        link:'https://softuni.bg/certificates/details/241537/56f23cc9'
+        link: 'https://softuni.bg/certificates/details/241537/56f23cc9'
     },
     {
         title: "Back-End",
         desc: "Skilled in Node.js, Express, MongoDB, sessions, auth, validation, and error handling for secure, reliable back-end development.",
-        link:'https://softuni.bg/certificates/details/237727/198b8f4c'
+        link: 'https://softuni.bg/certificates/details/237727/198b8f4c'
     },
     {
         title: "JavaScript Applications",
         desc: "Built dynamic web apps using REST, async programming, SPA architecture, client-side rendering, routing, testing, and modular design.",
-        link:'https://softuni.bg/certificates/details/231974/0d0e7a28'
+        link: 'https://softuni.bg/certificates/details/231974/0d0e7a28'
     },
     {
         title: "JavaScript Advanced",
         desc: "Strong JavaScript skills: syntax, DOM, events, OOP, advanced functions, unit testing, and best practices for interactive web development. ",
-        link:'https://softuni.bg/certificates/details/227991/9306f4cb'
+        link: 'https://softuni.bg/certificates/details/227991/9306f4cb'
     },
 ];
 
@@ -44,11 +44,26 @@ export default function Education() {
                 <div className="flex flex-col gap-16">
                     {items.map((item, index) => {
                         const isLeft = index % 2 === 0;
+                        const justifyContent = isLeft ? "justify-start" : "justify-end"
                         return (
-                            <div key={index} className={`relative flex justify-${isLeft ? "start" : "end"} items-center`}>
-                                <div className={`w-1/2 px-4 flex flex-col ${isLeft ? "text-right items-end" : "text-left items-start"}`}>
-                                    <a href={item.link} target="_blank" rel="noopener noreferrer" ><h3 className="text-pink-400 font-semibold hover:text-pink-200 cursor-pointer">{item.title}</h3></a>
-                                    <p className="text-sm text-gray-300 cursor-default xl:w-1/2">{item.desc}</p>
+                            <div key={index} className={`relative flex ${justifyContent} items-center`}>
+                                <div className={`w-1/2 px-4 flex flex-col ${isLeft ? "text-right" : "text-left"}`}>
+                                    <a
+                                        href={item.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={isLeft ? "self-end" : "self-start"}
+                                    >
+                                        <h3 className="text-pink-400 font-semibold hover:text-pink-200 cursor-pointer">
+                                            {item.title}
+                                        </h3>
+                                    </a>
+                                    <p
+                                        className={`text-sm text-gray-300 cursor-default xl:w-1/2 ${isLeft ? "self-end" : "self-start"
+                                            }`}
+                                    >
+                                        {item.desc}
+                                    </p>
                                 </div>
 
                                 {/* Dot */}
