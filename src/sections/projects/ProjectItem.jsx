@@ -14,7 +14,7 @@ export default function ProjectItem({ project }) {
         setActiveTab(tab)
     }
 
-    const width = project.grow > 0 ? 'w-[55%] xl:w-[50%]' : 'w-[42%] lg:w-[40%]'
+    const width = project.grow > 0 ? 'md:w-[55%] xl:w-[50%]' : 'md:w-[42%] lg:w-[40%]'
 
     return (
         <Box
