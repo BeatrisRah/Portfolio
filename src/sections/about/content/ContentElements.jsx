@@ -5,6 +5,7 @@ import Hobbies from "./element/Hobbies";
 import FunFact from "./element/FunFact";
 import HelpCommandContent from "./element/HelpCommand";
 import ListContent from "./element/ListWebsiteContent";
+import ThreadScanner from "./element/ThreadScanner";
 
 
 
@@ -35,6 +36,8 @@ export default function ContentElements({ command }) {
             )
         case 'ls':
             return <ListContent />
+        case 'scan':
+            return <ThreadScanner />
     }
 
     return <InvalidCommandTerminal command={command} />
