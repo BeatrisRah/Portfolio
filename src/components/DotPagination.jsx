@@ -5,7 +5,7 @@ export default function DotPagination() {
 
 
     return (
-        <div className="fixed right-2 xl:right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3">
+        <div className="fixed right-2 xl:right-6 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3">
             {sections.map((sec) => (
                 <Link
                     key={sec}
