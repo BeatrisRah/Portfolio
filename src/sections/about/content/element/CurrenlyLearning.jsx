@@ -7,19 +7,23 @@ export default function CurrentlyLearning() {
     <ul className="list-disc pl-5 space-y-1">
         <li>
             <span className="text-pink-400">C# WPF</span> –
-             to create a Windows Desktop .NET application in C#
+            Building rich desktop applications using XAML and MVVM architecture.
         </li>
         <li>
             <span className="text-yellow-300">PostgreSQL</span> – 
-            relational database
+            Deepening understanding of relational database design, advanced SQL, and performance tuning.
         </li>
         <li>
             <span className="text-blue-400">TypeScript</span> – 
-            types, enums, union types and more
+            Strengthening front-end development with type safety and scalable code architecture.
         </li>
         <li>
-            <span className="text-teal-300">Phaser</span> –
-            game development using javascript
+            <span className="text-red-500">Phaser</span> –
+            Exploring 2D game development concepts and building interactive browser-based games.
+        </li>
+        <li>
+            <span className="text-teal-300">React Native</span> –
+            Developing cross-platform mobile apps with modern JavaScript frameworks and native components.
         </li>
     </ul>
 </div>
