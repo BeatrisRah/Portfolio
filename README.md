@@ -17,7 +17,7 @@ Welcome to my personal portfolio — reimagined as a futuristic developer dashbo
 - **Icons & UI:** React Icons, DaisyUI
 - **Charts:** Recharts
 - **Typing Effects:** react-simple-typewriter
-- **Hosting:** [Vite](portfolio-roan-five-62.vercel.app)
+- **Hosting:** [Vite](https://portfolio-roan-five-62.vercel.app/)
 
 ## 🧪 Available Commands (In Terminal UI)
 
