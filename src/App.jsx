@@ -47,7 +47,7 @@ function App() {
 			</div>
 
 			{/* Page Content */}
-			<div className="xl:ml-64 xl:w-10/12 w-full lg:ml-2">				
+			<div className="xl:ml-64 w-full xl:w-10/12 lg:ml-2">				
 				<TopNavigation />
 				<Home />
 				<Tetch />

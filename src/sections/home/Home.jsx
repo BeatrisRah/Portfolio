@@ -7,7 +7,7 @@ import ContributionGrid from "./Activity";
 export default function Home() {
 
     return (
-        <Element name="home" className="min-h-screen relative bg-transparent p-8">
+        <Element name="home" className="min-h-screen relative bg-transparent p-8 overflow-hidden">
             <pre className="absolute text-pink-500/60 z-0 right-10 lg:right-40 -top-10 rotate-3">
                 {`
              ⢀⣀⠀⠀⠀⠀⠀⢀⣀⠀
@@ -20,7 +20,7 @@ export default function Home() {
             ⠀⠳⣼⣤⣤⣤⣤⣤⣧⠾⠁`}
             </pre>
 
-            <div className="mb-5 w-10/12 ml-10">
+            <div className="mb-5 w-full md:w-10/12 ml-10">
                 <p className="text-3xl text-white">Beatris Rahimi</p>
                 <h1 className="jersay text-5xl lg:text-7xl text-white tracking-wider">Junior Software Engineer</h1>
             </div>
