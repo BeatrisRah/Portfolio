@@ -30,7 +30,7 @@ export const projects = [
     {
         name: 'VibeChat', 
         gitUrl:'https://github.com/BeatrisRah/VibeChat', 
-        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        image:new URL('./assets/vibechat.png', import.meta.url).href,
         info:'Chatroom app for users to intercat, using Socket.IO and VersaCore for back-end.',
         features:[
             "User Authentication",
@@ -53,7 +53,7 @@ export const projects = [
     {
         name: 'UserManagementSystem', 
         gitUrl:'https://github.com/BeatrisRah/UserManagementSystem', 
-        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        image:new URL('./assets/usermanagement.png', import.meta.url).href,
         info:'ExpressJS application where admins can manage users profiles. Using dummyjson for mimicking REST API JSON Data.',
         features:[
             "User Authentication",
@@ -72,7 +72,7 @@ export const projects = [
     {
         name: 'VersaCore', 
         gitUrl:'https://github.com/BeatrisRah/VersaCore', 
-        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        image:  new URL('./assets/server.jpg', import.meta.url).href,
         info:'ExpressJS server for running multiple projects.',
         features:[
             // "Persistent Data with MongoDB",
@@ -92,25 +92,9 @@ export const projects = [
         grow:1
     },
     {
-        name: 'Store', 
-        gitUrl:'https://github.com/BeatrisRah/BookSwap', 
-        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
-        info:'Application that helps you easily keep track of your store items.',
-        features:[
-            "Item Managment",
-        ],//bullet point
-        links:{
-            git:'https://github.com/BeatrisRah/',
-        },
-        techStack:[
-            
-        ],
-        grow:1
-    },
-    {
         name: 'NoteApp', 
         gitUrl:'https://github.com/BeatrisRah/SoftUni-React/tree/main/react-typescript', 
-        image:'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png',
+        image:new URL('./assets/noteapp.png', import.meta.url).href,
         info:'Simple NoteApp made to practice Typescript + React.',
         features:[
             "Making Notes",
@@ -124,6 +108,22 @@ export const projects = [
             techStackList.TypeScript,
             techStackList.React,
             {name:'MUI', img:'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg' }
+        ],
+        grow:1
+    },
+    {
+        name: 'Store', 
+        gitUrl:'https://github.com/BeatrisRah/BookSwap', 
+        image:'https://us.123rf.com/450wm/yupiramos/yupiramos1703/yupiramos170307289/73899917-construction-design-over-yellow-background-vector-illustration.jpg?ver=6',
+        info:'Application that helps you easily keep track of your store items.',
+        features:[
+            "Item Managment",
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/',
+        },
+        techStack:[
+            
         ],
         grow:0
     },
