@@ -72,7 +72,7 @@ export const projects = [
     {
         name: 'VersaCore', 
         gitUrl:'https://github.com/BeatrisRah/VersaCore', 
-        image:  new URL('./assets/server.jpg', import.meta.url).href,
+        image:  new URL('./assets/server.png', import.meta.url).href,
         info:'ExpressJS server for running multiple projects.',
         features:[
             // "Persistent Data with MongoDB",

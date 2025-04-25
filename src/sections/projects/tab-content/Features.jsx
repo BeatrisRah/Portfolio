@@ -1,6 +1,6 @@
 export default function FeaturesTab({featuresArr}) {
    return (
-       <ul className="space-y-1 list-none h-35 flex flex-col flex-wrap">
+       <ul className="space-y-1 list-none flex flex-col flex-wrap">
             {featuresArr.map(f => <li
             key={f}
             className="flex items-baseline gap-3 text-white/90 hover:text-white transition"
