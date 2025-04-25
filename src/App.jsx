@@ -42,12 +42,12 @@ function App() {
 		<div className="flex relative">
 			<div style={gradientStyle}></div>
 
-			<div className="w-64 fixed h-screen bg-[#12121B]/90 text-white z-10">
+			<div className="hide-below-1440 w-64 fixed h-screen bg-[#12121B]/90 text-white z-10">
 				<Sidebar />
 			</div>
 
 			{/* Page Content */}
-			<div className="ml-64 w-10/12">
+			<div className="xl:ml-64 xl:w-10/12 w-full lg:ml-2">				
 				<TopNavigation />
 				<Home />
 				<Tetch />

@@ -1,7 +1,8 @@
-import { MdHomeFilled } from "react-icons/md";
 import SideBarItem from "./SideBarItem";
 import { FaWrench } from "react-icons/fa6";
 import { FaLaptopCode, FaBook, FaUserAlt } from "react-icons/fa";
+import { MdHomeFilled } from "react-icons/md";
+
 
 const navLinks = [
     {path: 'home', name:'Home', icon: <MdHomeFilled />},

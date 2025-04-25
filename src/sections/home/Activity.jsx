@@ -3,12 +3,12 @@ import { useMemo } from 'react';
 export default function ContributionGrid () {
     const grid = useMemo(() => {
         return Array.from({ length: 7 }, () =>
-          Array.from({ length: 15 }, () => Math.floor(Math.random() * 5))
+          Array.from({ length: 17 }, () => Math.floor(Math.random() * 5))
         );
       }, []);
     
       return (
-        <div className="flex gap-1 p-2  w-full rounded-md">
+        <div className="flex gap- p-2 w-full rounded-md justify-center overflow-hidden">
           {grid[0].map((_, colIndex) => (
             <div key={colIndex} className="flex flex-col gap-1">
               {grid.map((row, rowIndex) => (
