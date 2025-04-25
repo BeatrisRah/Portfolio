@@ -25,16 +25,16 @@ export default function Tetch() {
 ⊂_﹏u`}
             </pre>
 
-        <div className="flex flex-wrap gap-2 p-2 pb-10">
+        <div className="flex flex-wrap justify-center xl:justify-start gap-2 p-2 pb-10">
         {Object.values(techStackList).map(el => <TechItem tech={el} key={el.name} />)}
         </div>
 
         </Box>
         <div className="flex gap-5">
-            <Box className="w-[45%]">
+            <Box className="w-1/2 xl:w-[45%]">
                 <CustomBarChart />
             </Box>
-            <div className="p-6 ml-6">
+            <div className="p-6 w-1/2 xl:ml-6">
                 <h1 className="text-4xl jersay mb-4">My Stack Usage Levels</h1>
                 <ul className="grid grid-cols-2 gap-y-2 text-lg max-w-md ml-4">
                     <li className="text-left">Vibing to music</li>
