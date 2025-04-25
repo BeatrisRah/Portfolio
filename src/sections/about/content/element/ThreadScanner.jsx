@@ -33,7 +33,7 @@ export default function ThreadScanner() {
                     <div className="mt-4 text-red-500">
                         <p>Ooh Oh... </p>
                         <p>It appears you've been hacked by a bunny!</p>
-                        <p className="mt-2 text-sm text-gray-400">better get them carrots</p>
+                        <p className="mt-2 text-sm text-gray-400">Better get them carrots 👀🥕</p>
                     </div>
                 )}
             </div>

@@ -14,11 +14,11 @@ export default function About() {
     }, [currentCommand])
 
     return (
-        <Element name="about" className="min-h-screen p-8 lg:w-11/12 mt-20 mx-auto">
-            <div className="flex gap-2">
+        <Element name="about" className="min-h-screen p-4 md:p-8 lg:w-11/12 mt-20 mx-auto">
+            <div className="flex flex-wrap-reverse gap-2 md:flex-nowrap">
                 <Content command={currentCommand} />
 
-                <div className="w-2/5 h-98 overflow-scroll lg:h-auto text-white p-6 font-mono border-2 border-pink-400 space-y-4">
+                <div className="md:w-2/5 h-98 overflow-scroll lg:h-auto text-white p-6 font-mono border-2 border-pink-400 space-y-4">
                     <p className="text-pink-400 hover:text-red-200">➤ Welcome to the Terminal!</p>
                     <p className="text-sm lg:text-md text-gray-400">
                         Hello! I'm here to guide you through the terminal. Follow the instructions below to get started:

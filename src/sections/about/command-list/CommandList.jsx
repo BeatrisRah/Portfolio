@@ -4,7 +4,7 @@ import { personalCommandList, systemCommnadList } from "../commandListJson";
 
 const tabTypes = ['personal', 'system']
 
-export default function CommandList({tabType}) {
+export default function CommandList({ tabType }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -22,9 +22,9 @@ export default function CommandList({tabType}) {
                 <>
                     <div className="flex mt-2 px-2">
                         {tabTypes.map((el, i) => <>
-                            <p 
+                            <p
                                 key={i}
-                                className={`text-pink-500 ${tabType === el ? 'border-b-1 border-pink-500' :''}`}
+                                className={`text-pink-500 ${tabType === el ? 'border-b-1 border-pink-500' : ''}`}
                             >{el}</p>
 
 
@@ -65,21 +65,20 @@ function formatCommentInLine(el) {
     if (currentLine) lines.push(currentLine.trim());
 
     return (
-        <li key={el.name} className="p-2 font-mono text-sm whitespace-pre">
+        <li key={el.name} className="p-2 font-mono text-sm whitespace-pre-wrap break-words">
             {lines.map((line, idx) => {
                 if (idx === 0) {
                     const [beforeComment, ...after] = line.split("//");
                     return (
-                        <div key={idx}>
-                            <span className="text-gray-100">{beforeComment.trim()}</span>
-                            {" "}
+                        <div className="w-full" key={idx}>
+                            <span className="text-gray-100">{beforeComment.trim()}</span>{" "}
                             <span className="text-gray-500">//{after.join("//").trim()}</span>
                         </div>
                     );
                 } else {
                     return (
-                        <div key={idx} className="text-gray-500">
-                            {" ".repeat(command.length + 1)}// {line.replace(/^\/\/\s*/, "").trim()}
+                        <div key={idx} className="text-gray-500 pl-10">
+          // {line.replace(/^\/\/\s*/, "").trim()}
                         </div>
                     );
                 }
