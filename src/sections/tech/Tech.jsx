@@ -26,7 +26,7 @@ export default function Tetch() {
             </pre>
 
         <div className="flex flex-wrap gap-2 p-2 pb-10">
-        {Object.values(techStackList).map(el => <TechItem tech={el} />)}
+        {Object.values(techStackList).map(el => <TechItem tech={el} key={el.name} />)}
         </div>
 
         </Box>
