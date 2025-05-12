@@ -36,7 +36,7 @@ export default function Hobbies() {
                     </li>
                     {step >= 5 && (
                         <li>
-                            <span className="text-pink-400">+ pixel-art@0.8.7</span> 🎨 – drawing tiny worlds, one pixel at a time
+                            <span className="text-pink-400">+ digital-art@0.8.7</span> 🎨 – drawing tiny worlds, one pixel at a time
                         </li>
                     )}
                     {step >= 6 && (

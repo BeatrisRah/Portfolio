@@ -113,17 +113,19 @@ export const projects = [
     },
     {
         name: 'Store', 
-        gitUrl:'https://github.com/BeatrisRah/BookSwap', 
+        gitUrl:'https://github.com/BeatrisRah/electron-store', 
         image:'https://us.123rf.com/450wm/yupiramos/yupiramos1703/yupiramos170307289/73899917-construction-design-over-yellow-background-vector-illustration.jpg?ver=6',
         info:'Application that helps you easily keep track of your store items.',
         features:[
             "Item Managment",
         ],//bullet point
         links:{
-            git:'https://github.com/BeatrisRah/',
+            git:'https://github.com/BeatrisRah/electron-store',
         },
         techStack:[
-            
+            techStackList.TypeScript,
+            techStackList.Electron,
+            {name: 'Postgresql', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png'}
         ],
         grow:0
     },

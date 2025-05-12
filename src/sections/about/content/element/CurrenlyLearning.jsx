@@ -6,8 +6,8 @@ export default function CurrentlyLearning() {
     </p>
     <ul className="list-disc pl-5 space-y-1">
         <li>
-            <span className="text-pink-400">C# WPF</span> –
-            Building rich desktop applications using XAML and MVVM architecture.
+            <span className="text-pink-400">Python</span> –
+            Learning Python to build scalable software, automate workflows, and write clean, maintainable code across multiple domains.
         </li>
         <li>
             <span className="text-yellow-300">PostgreSQL</span> – 
