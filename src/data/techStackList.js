@@ -4,6 +4,7 @@ export const techStackList = {
     NodeJS:{name:'NodeJS', img:'https://cdn-icons-png.flaticon.com/512/5968/5968322.png'},
     ExpressJS:{name:'ExpressJS', img:'https://www.manektech.com/storage/developer/1646733543.webp'},
     React:{name:'React', img:'https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-2945110.png?f=webp&w=256'},
+    'React Native':{name:'React Native', img:'https://cdn.worldvectorlogo.com/logos/react-native-1.svg'},
     'React Query':{name:'React Query', img:'https://miro.medium.com/v2/resize:fit:1400/1*elhu-42TzQEdsFjKDbQhhA.png'},
     Redux:{name:'Redux', img:'https://cdn.worldvectorlogo.com/logos/redux.svg'},
     Tailwind:{name:'Tailwind', img:'https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/31/tailwind.png'},

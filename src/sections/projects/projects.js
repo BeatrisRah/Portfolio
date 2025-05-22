@@ -92,6 +92,28 @@ export const projects = [
         grow:1
     },
     {
+        name: 'SkinCare App', 
+        gitUrl:'https://github.com/BeatrisRah/Skincare-App', 
+        image:new URL('./assets/skincare_figma.png', import.meta.url).href,
+        info:'Mobile App to keep your skincare routine organized. My first React Native app.',
+        features:[
+            "Weekly & Daily managment of skin routine steps.",
+            "Morning, noon and evening list routine.",
+            "Checklist structure."
+        ],//bullet point
+        links:{
+            git:'https://github.com/BeatrisRah/Skincare-App',
+        },
+        techStack:[
+            techStackList.TypeScript,
+            techStackList["React Native"],
+            techStackList.Tailwind,
+            {name:'Expo', img:'https://www.svgrepo.com/show/353722/expo.svg'}
+            // {name: 'Postgresql', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png'}
+        ],
+        grow:1
+    },
+    {
         name: 'NoteApp', 
         gitUrl:'https://github.com/BeatrisRah/SoftUni-React/tree/main/react-typescript', 
         image:new URL('./assets/noteapp.png', import.meta.url).href,
@@ -109,24 +131,6 @@ export const projects = [
             techStackList.React,
             {name:'MUI', img:'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg' }
         ],
-        grow:1
-    },
-    {
-        name: 'Store', 
-        gitUrl:'https://github.com/BeatrisRah/electron-store', 
-        image:'https://us.123rf.com/450wm/yupiramos/yupiramos1703/yupiramos170307289/73899917-construction-design-over-yellow-background-vector-illustration.jpg?ver=6',
-        info:'Application that helps you easily keep track of your store items.',
-        features:[
-            "Item Managment",
-        ],//bullet point
-        links:{
-            git:'https://github.com/BeatrisRah/electron-store',
-        },
-        techStack:[
-            techStackList.TypeScript,
-            techStackList.Electron,
-            {name: 'Postgresql', img:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png'}
-        ],
         grow:0
-    },
+    }
 ]
